@@ -3,6 +3,7 @@ package com.hunter.dao;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
+import java.util.Calendar;
 
 import com.hunter.util.DBUtils;
 
@@ -44,8 +45,4 @@ public class HunterDaoImpl implements HunterDao {
 		return false;
 	}
 	
-	public static void main(String[] args) {
-		System.out.println(new HunterDaoImpl().saveData("qaaaa", new Date(System.currentTimeMillis()), "aaaa"));
-	}
-
 }

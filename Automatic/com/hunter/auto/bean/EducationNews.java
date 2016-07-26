@@ -1,4 +1,4 @@
-package com.hunter.bean;
+package com.hunter.auto.bean;
 
 import java.util.Date;
 
@@ -39,13 +39,7 @@ public class EducationNews {
 		this.id = id;
 	}
 
-	public String getTitle() {
-		return title;
-	}
 
-	public void setTitle(String title) {
-		this.title = title;
-	}
 
 	public Date getUpload_date() {
 		return upload_date;
@@ -55,9 +49,6 @@ public class EducationNews {
 		this.upload_date = upload_date;
 	}
 
-	public String getContent() {
-		return content;
-	}
 
 	public void setContent(String content) {
 		this.content = content;
@@ -70,6 +61,19 @@ public class EducationNews {
 	public void setSource(String source) {
 		this.source = source;
 	}
-	
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getContent() {
+		return content;
+	}
+
+
 	
 }

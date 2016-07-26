@@ -20,7 +20,7 @@
     <url-pattern>/HunterIndex</url-pattern>
   </servlet-mapping>
   <servlet>
-    <description></description>
+    <description>url解析器</description>
     <display-name>URLPaser</display-name>
     <servlet-name>URLPaser</servlet-name>
     <servlet-class>com.hunter.service.URLPaser</servlet-class>
@@ -28,5 +28,25 @@
   <servlet-mapping>
     <servlet-name>URLPaser</servlet-name>
     <url-pattern>/URLPaser.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>自动模式启动器</description>
+    <display-name>Startup</display-name>
+    <servlet-name>Startup</servlet-name>
+    <servlet-class>com.hunter.auto.serviceEngine.Startup</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Startup</servlet-name>
+    <url-pattern>/startup</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>自动模式关闭</description>
+    <display-name>Shutdown</display-name>
+    <servlet-name>Shutdown</servlet-name>
+    <servlet-class>com.hunter.auto.serviceEngine.Shutdown</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Shutdown</servlet-name>
+    <url-pattern>/shutdown</url-pattern>
   </servlet-mapping>
 </web-app>
