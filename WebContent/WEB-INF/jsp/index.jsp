@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%
+	String message = (String) request.getAttribute("message");
+%>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -52,14 +55,21 @@
 				<h1>
 					Web猎手1.0
 				</h1>
+				<%
+					if (message != null && message != "") {
+				%>
+				<h3><font color="red"><%=message %></font></h3>
+				<%
+					}
+				%>
 			</div>
 			
 			<div class="main-content">
-				<form class="form-horizontal" action="" method="post">
+				<form class="form-horizontal" action="URLPaser.do" method="post">
 				  <div class="form-group">
 				    <label for="inputPassword" class="col-sm-2 control-label"><h3>URL</h3></label>
 				    <div class="col-sm-10">
-				      <input type="text" class="form-control" id="inputPassword" placeholder="请输入要解析的URL,优先目标腾讯教育频道">
+				      <input type="text" class="form-control" name="url" id="inputPassword" placeholder="请输入要解析的URL,优先目标腾讯教育频道">
 				    </div>
 				  </div>
 				  <div>

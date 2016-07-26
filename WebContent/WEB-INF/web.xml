@@ -19,4 +19,14 @@
     <servlet-name>HunterIndex</servlet-name>
     <url-pattern>/HunterIndex</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>URLPaser</display-name>
+    <servlet-name>URLPaser</servlet-name>
+    <servlet-class>com.hunter.service.URLPaser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>URLPaser</servlet-name>
+    <url-pattern>/URLPaser.do</url-pattern>
+  </servlet-mapping>
 </web-app>
